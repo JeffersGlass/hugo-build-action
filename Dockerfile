@@ -25,7 +25,6 @@ RUN apk update && \
       git \
       nodejs \
       npm \
-      yarn \
       python3 \
       py3-pip \
       ruby \
