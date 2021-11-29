@@ -53,6 +53,7 @@ RUN go get github.com/yaegashi/muslstack && \
 RUN hugo version && \
     hugo env && \
     postcss --version && \
+    tailwindcss -h && \
     autoprefixer --version && \
     babel --version && \
     pygmentize -V && \
