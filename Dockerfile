@@ -33,7 +33,7 @@ RUN apk update && \
     update-ca-certificates
 
 # download Hugo and miscellaneous optional dependencies
-RUN npm install --global tailwindcss postcss postcss-cli autoprefixer @babel/core @babel/cli && \
+RUN npm install --global tailwindcss@latest postcss@latest postcss-cli autoprefixer@latest @babel/core @babel/cli && \
     pip3 install --upgrade Pygments==2.* && \
     gem install asciidoctor && \
     wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_EXTENDED:+extended_}${HUGO_VERSION}_Linux-64bit.tar.gz && \
