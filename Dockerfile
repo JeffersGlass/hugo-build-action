@@ -33,7 +33,7 @@ RUN apk update && \
 
 # download Hugo and miscellaneous optional dependencies
 #npm install -D package.json && \
-RUN npm install --global tailwindcss postcss postcss-cli autoprefixer @babel/core @babel/cli && \
+RUN npm install --global postcss postcss-cli autoprefixer @babel/core @babel/cli tailwindcss && \
     echo $NODE_ENV && \
     pip3 install --upgrade Pygments==2.* && \
     gem install asciidoctor && \
