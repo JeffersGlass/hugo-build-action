@@ -61,6 +61,6 @@ RUN hugo version && \
     pygmentize -V && \
     asciidoctor --version
 
-WORKDIR /site
+WORKDIR site
 
 ENTRYPOINT ["hugo"]
